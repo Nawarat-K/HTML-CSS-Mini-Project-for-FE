@@ -1,0 +1,67 @@
+.quote-title {
+  position: relative;
+  margin-bottom: 50px;
+  max-width: 360px;
+}
+
+.quote-mark {
+  position: absolute;
+  left: -30px;
+  top: -30px;
+  width: 60px;
+  height: 60px;
+  background: #1a9bff;
+  color: var(--white);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 40px;
+  line-height: 1;
+  padding-top: 14px;
+}
+
+.quote-title h2 {
+  position: relative;
+  padding-top: 20px;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.reviews {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.review:first-child {
+  border-right: 1px solid #e8ecf8;
+  padding-right: 40px;
+}
+
+.review h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.review p {
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+
+.avatar-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.person-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.person-info strong {
+  color: var(--navy);
+}
