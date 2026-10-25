@@ -65,3 +65,13 @@
 .person-info strong {
   color: var(--navy);
 }
+
+@container (max-width: 900px) {
+  .reviews { grid-template-columns: 1fr; }
+  .reviews { gap: 32px; }
+  .review:first-child { border-right: none; border-bottom: 1px solid #e8ecf8; padding: 0 0 32px; }
+}
+
+@container (max-width: 700px) {
+  .quote-mark { left: -10px; }
+}

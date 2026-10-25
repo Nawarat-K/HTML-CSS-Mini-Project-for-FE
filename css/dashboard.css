@@ -18,3 +18,8 @@
   width: 34%;
   height: auto;
 }
+
+@media (max-width: 700px) {
+  .dash-sales { left: -8%; top: 42%; width: 40%; }
+  .dashboard { margin-bottom: 50px; }
+}

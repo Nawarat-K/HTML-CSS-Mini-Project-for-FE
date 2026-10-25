@@ -73,3 +73,7 @@
   display: block;
   text-align: center;
 }
+
+@container (max-width: 700px) {
+  .pricing-grid { grid-template-columns: 1fr; }
+}

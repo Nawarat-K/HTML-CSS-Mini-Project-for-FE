@@ -29,7 +29,7 @@
   display: none;
 }
 
-/* ========== 4. Hero ========== */
+
 .hero-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -68,9 +68,7 @@
   margin-right: 6px;
 }
 
-/* ภาพประกอบ + การ์ดลอย
-   ใช้หน่วย em ทั้งหมด (1em = font-size ของ .hero-visual)
-   อยากย่อ/ขยายทั้งชุด แก้ font-size ที่เดียว ตำแหน่งจะสัมพันธ์กันเสมอ */
+
 .hero-visual {
   font-size: min(10px, 1.65vw);
   display: flex;
@@ -166,4 +164,32 @@
 .brands img {
   height: 46px;
   width: auto;
+}
+
+@container (max-width: 700px) {
+  .menu-icon { display: block; font-size: 28px; color: var(--navy); cursor: pointer; }
+  .nav-links { display: none; position: absolute; top: 70px; left: 0; right: 0; flex-direction: column; gap: 18px; background: var(--white); padding: 24px; border-radius: 12px; box-shadow: 0 10px 30px rgba(40, 60, 160, .15); z-index: 10; }
+  #menu-toggle:checked ~ .nav-links { display: flex; }
+}
+
+@container (max-width: 900px) {
+  .hero-content { grid-template-columns: 1fr; }
+  .hero-text { text-align: center; }
+  .hero-text p { margin-left: auto; margin-right: auto; }
+  .hero-buttons { justify-content: center; }
+  .hero-visual { order: -1; }
+}
+
+@container (max-width: 700px) {
+  .hero-text h1 { font-size: 30px; }
+  .hero-buttons { flex-direction: column; gap: 18px; }
+  .hero-buttons .btn { width: 100%; text-align: center; }
+  .brands { flex-wrap: nowrap; gap: 12px; padding: 24px 0 40px; }
+  .brands img { width: 28%; height: auto; min-width: 0; }
+  .brands img:nth-child(4) { display: none; }
+}
+
+@container (min-width: 901px) and (max-width: 1100px) {
+  .hero-visual { font-size: .8cqw; }
+  .hero-text h1 { font-size: 36px; }
 }

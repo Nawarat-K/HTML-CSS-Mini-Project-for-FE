@@ -38,3 +38,7 @@
   font-size: 22px;
   cursor: pointer;
 }
+
+@container (max-width: 700px) {
+  .newsletter { border-radius: 0; width: 100cqw; margin-left: calc(50% - 50cqw); padding: 40px 20px; }
+}
