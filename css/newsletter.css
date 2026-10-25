@@ -1,0 +1,40 @@
+
+.newsletter {
+  background: var(--light-blue);
+  border-radius: 20px;
+  padding: 56px 20px;
+  text-align: center;
+}
+.newsletter p {
+  font-size: 13px;
+  max-width: 220px;
+  margin: 0 auto 24px;
+}
+.subscribe {
+  display: flex;
+  max-width: 440px;
+  margin: 0 auto;
+  background: var(--white);
+  border-radius: 40px;
+  padding: 6px;
+}
+.subscribe input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+  font-family: inherit;
+  font-size: 13px;
+  background: transparent;
+  min-width: 0;
+}
+.subscribe button {
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background: var(--blue);
+  color: var(--white);
+  font-size: 22px;
+  cursor: pointer;
+}
