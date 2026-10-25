@@ -1,0 +1,169 @@
+.hero {
+  background: linear-gradient(#e8eeff, #fff);
+  overflow-x: clip;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  position: relative;
+}
+.logo {
+  display: inline-block;
+  line-height: 0;
+}
+.logo img {
+  height: 33px;
+  width: auto;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  font-size: 15px;
+  color: var(--navy);
+}
+#menu-toggle,
+.menu-icon {
+  display: none;
+}
+
+/* ========== 4. Hero ========== */
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 0;
+}
+.hero-text h1 {
+  font-size: 44px;
+  max-width: 480px;
+  margin-bottom: 20px;
+}
+.hero-text p {
+  font-size: 14px;
+  margin-bottom: 32px;
+  max-width: 420px;
+}
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.demo-link {
+  color: var(--navy);
+  font-size: 15px;
+}
+.play {
+  display: inline-grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border: 1.5px solid var(--blue);
+  border-radius: 50%;
+  font-size: 8px;
+  color: var(--blue);
+  margin-right: 6px;
+}
+
+/* ภาพประกอบ + การ์ดลอย
+   ใช้หน่วย em ทั้งหมด (1em = font-size ของ .hero-visual)
+   อยากย่อ/ขยายทั้งชุด แก้ font-size ที่เดียว ตำแหน่งจะสัมพันธ์กันเสมอ */
+.hero-visual {
+  font-size: min(10px, 1.65vw);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 47.5em;
+  padding-top: 14em;
+}
+.hero-stage {
+  position: relative;
+  left: -1.5em;
+  flex-shrink: 0;
+  width: 30em;
+  height: 30em;
+  background: #b3c3ff;
+  border-radius: 2.7em;
+}
+.hero-man {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 24em;
+  height: auto;
+}
+
+.float-card {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background: var(--white);
+  border-radius: 1em;
+  font-size: 1em;
+  line-height: 1.45;
+  box-shadow: 0 0.8em 2.4em rgba(40, 60, 160, 0.12);
+}
+.float-card strong {
+  color: var(--navy);
+  font-size: 1.05em;
+}
+.float-card small {
+  font-size: 0.95em;
+}
+.stars {
+  color: #ffb400;
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+}
+
+.card-rating {
+  left: -6.3em;
+  top: -1.5em;
+  width: 11.2em;
+  height: 4.8em;
+  padding: 0.6em 1em 0 1.6em;
+  white-space: nowrap;
+}
+.rating-avatar {
+  position: absolute;
+  left: -0.6em;
+  top: -2.6em;
+  width: 3.8em;
+  height: 3.8em;
+}
+.card-chat {
+  position: absolute;
+  left: 18.4em;
+  top: 16.8em;
+  width: 27.3em;
+  height: auto;
+}
+.card-notify {
+  left: -9.1em;
+  top: 26.8em;
+  width: 19.7em;
+  height: 6.8em;
+  padding: 0 1.4em;
+  gap: 1.2em;
+}
+.notify-icon {
+  width: 4.1em;
+  height: 4.1em;
+  flex-shrink: 0;
+}
+
+.brands {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 40px 0 60px;
+}
+.brands img {
+  height: 46px;
+  width: auto;
+}
