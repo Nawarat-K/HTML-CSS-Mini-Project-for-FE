@@ -1,0 +1,54 @@
+
+.footer {
+  padding: 40px 0 30px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr 1.2fr;
+  gap: 30px;
+  font-size: 14px;
+}
+
+.footer h4 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.footer li {
+  margin-bottom: 12px;
+}
+
+.contact {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact img {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.social {
+  margin-top: 20px;
+  width: 136px;
+  height: auto;
+  display: block;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 60px;
+  font-size: 12px;
+}
+
+.legal a {
+  margin-left: 24px;
+}
+
