@@ -1,0 +1,58 @@
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  text-align: left;
+}
+
+.feature {
+  padding: 36px 30px;
+  border-radius: 12px;
+}
+
+.feature.highlight {
+  background: var(--white);
+  box-shadow: 0 10px 40px rgba(40, 60, 160, 0.1);
+}
+
+.feature h3 {
+  font-size: 18px;
+  margin: 20px 0 10px;
+}
+
+.feature p {
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.more {
+  font-size: 13px;
+  font-weight: 500;
+  color: #7a7fa6;
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+}
+
+.icon img {
+  width: 32px;
+  height: 32px;
+}
+
+.icon-orange {
+  background: #ffeee6;
+}
+
+.icon-blue {
+  background: #e8ebff;
+}
+
+.icon-yellow {
+  background: #fff2d6;
+}
