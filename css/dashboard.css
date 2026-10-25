@@ -1,0 +1,20 @@
+
+.dashboard {
+  position: relative;
+  max-width: 864px;
+  margin: 0 auto;
+}
+
+.dash-main-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.dash-sales {
+  position: absolute;
+  left: -21.6%;
+  top: 39%;
+  width: 34%;
+  height: auto;
+}
